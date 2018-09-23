@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.android.parthjoshi.bakester.view.adapters.RecipeMasterAdapter"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ingredients_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ingredients_label_margin"
+            android:padding="@dimen/ingredients_label_padding"
+            android:text="@string/ingredients_label_master"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="@color/colorAccent"
+            android:textColor="@color/textIcons"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/stepsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ingredients_label"
+            android:layout_margin="@dimen/steps_list_margin"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:orientation="vertical"
+            app:reverseLayout="false"
+            android:adapter="@{adapter}"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

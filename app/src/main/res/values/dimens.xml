@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Menu Activity Dimemsions -->
+    <dimen name="recyclerview_horizontal">8dp</dimen>
+    <dimen name="recyclerview_top">4dp</dimen>
+    <dimen name="recyclerview_bottom">8dp</dimen>
+    <dimen name="gridview_top">16dp</dimen>
+    <dimen name="constraint_margin">8dp</dimen>
+    <dimen name="card_radius">4dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+    <dimen name="recipe_name_margin">2dp</dimen>
+    <dimen name="recipe_name_vert_padding">32dp</dimen>
+    <dimen name="recipe_name_horizontal_padding">16dp</dimen>
+    <dimen name="card_label_start">16dp</dimen>
+    <dimen name="card_label_vert">8dp</dimen>
+    <dimen name="card_label_count_start">4dp</dimen>
+
+    <!-- Recipe Activity & Fragments Dimensions -->
+    <dimen name="scrollview_bottom">8dp</dimen>
+    <dimen name="master_fragment_margin">8dp</dimen>
+    <dimen name="detail_fragment_margin">8dp</dimen>
+    <dimen name="ingredients_label_margin">16dp</dimen>
+    <dimen name="ingredients_label_padding">8dp</dimen>
+    <dimen name="steps_list_margin">8dp</dimen>
+    <dimen name="step_item_margin_padding">8dp</dimen>
+
+    <!-- Ingredient Fragment dimensions -->
+    <dimen name="label_horizontal">8dp</dimen>
+    <dimen name="label_vertical">16dp</dimen>
+    <dimen name="ingredient_item_horizontal">8dp</dimen>
+    <dimen name="ingredient_item_vert">16dp</dimen>
+    
+    <!-- Step Fragment dimensions -->
+    <dimen name="thumbnail_margin">8dp</dimen>
+    <dimen name="short_desc_start">8dp</dimen>
+    <dimen name="short_desc_top">16dp</dimen>
+    <dimen name="step_desc_margin">8dp</dimen>
+    <dimen name="step_counter_margin">32dp</dimen>
+    <dimen name="counter_btn_margin">8dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="refresh_btn_margin">8dp</dimen>
+    <dimen name="widget_divider_height">2dp</dimen>
+    <dimen name="widget_divider_horizontal">8dp</dimen>
+    <dimen name="widget_label_margin">8dp</dimen>
+    <dimen name="widget_list_top">8dp</dimen>
+    <dimen name="widget_list_start">4dp</dimen>
+    <dimen name="widget_list_item_top">4dp</dimen>
+
+</resources>

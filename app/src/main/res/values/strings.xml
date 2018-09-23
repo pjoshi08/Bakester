@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bakester</string>
+    <string name="ingredients_label">Ingredients:</string>
+    <string name="step_label">Steps:</string>
+    <string name="serves_label">Serves:</string>
+
+    <string name="ingredients_label_master">Key Ingredients</string>
+
+    <!-- Ingredient Detail Activity strings -->
+    <string name="ingredient_label">Ingredient</string>
+    <string name="measure_label">Measure</string>
+    <string name="quantity_label">Quantity</string>
+</resources>

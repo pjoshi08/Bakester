@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.android.parthjoshi.bakester.view.adapters.IngredientsAdapter"/>
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".view.IngredientsFragment">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/ingredient_label"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/label_horizontal"
+                android:layout_marginTop="@dimen/label_vertical"
+                android:layout_weight="2"
+                android:text="@string/ingredient_label"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantity_label"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/label_horizontal"
+                android:layout_marginTop="@dimen/label_vertical"
+                android:layout_weight="1"
+                android:text="@string/quantity_label"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/measure_label"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/label_horizontal"
+                android:layout_marginTop="@dimen/label_vertical"
+                android:layout_weight="1"
+                android:text="@string/measure_label"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/ingredients_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_marginTop="8dp"
+            android:adapter="@{adapter}"
+            android:divider="@null" />
+    </RelativeLayout>
+</layout>
